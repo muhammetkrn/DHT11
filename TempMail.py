@@ -23,8 +23,8 @@ data.write('temperature,location=' + neworg +  ' hum='+ str(hum))
 def mail(content):
     mail = smtplib.SMTP("smtp.gmail.com",587) 
     mail.starttls()
-    mail.login('gozenintern@gmail.com','iskenHub123**')
-    mail.sendmail("gozenintern@gmail.com","muhammetkrn19@gmail.com",content)
+    mail.login('youremail@gmail.com','password')
+    mail.sendmail("youremail@gmail.com","targetemail@gmail.com",content)
 
 
 if temp>=25.0:
