@@ -28,6 +28,7 @@ def mail(content):
     mail.sendmail("youremail@gmail.com","targetemail@gmail.com",content)
 
 #content değişkenine uyarı mesajları atıldı ve mail fonksiyonu content parametresi ile çağrıldı.
+#Ölçülen değerlere göre mail kullanıcısına ilgili mesaj gönderildi.
 if temp>=25.0:
     content = 'Oda sicakligi ' + str(temp) + '*C' + ' Sicaklik yuksek!'
     mail(content)
